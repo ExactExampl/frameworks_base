@@ -7438,7 +7438,8 @@ message MetricsEvent {
     // Add new aosp constants above this line.
     // END OF AOSP CONSTANTS
 
-    // ARROW Metrics
-    ARROW = 2772;
+    // CustomSettings constant
+    CUSTOM_SETTINGS = 1999;
+
   }
 }
