@@ -30,7 +30,7 @@ import java.util.Map;
 public class PixelPropsUtils {
 
     public static final String PACKAGE_GMS = "com.google.android.gms";
-    private static final String DEVICE = "org.pixelexperience.device";
+    private static final String DEVICE = "ro.product.device";
     private static final String TAG = PixelPropsUtils.class.getSimpleName();
     private static final boolean DEBUG = false;
 
@@ -38,14 +38,13 @@ public class PixelPropsUtils {
 
     private static final Map<String, Object> propsToChangePixel5;
     private static final String[] packagesToChangePixel5 = {
-            "com.android.vending",
-            "com.google.android.apps.photos",
+            "com.google.android.tts",
+            "com.google.android.dialer",
+            "com.google.android.apps.recorder",
             "com.google.android.apps.turbo",
             "com.google.android.apps.turboadapter",
-            "com.google.android.dialer",
-            "com.google.android.googlequicksearchbox",
-            "com.google.android.tts",
-            "com.google.audio.hearing.visualization.accessibility.scribe"
+            "com.android.vending",
+            "com.google.android.apps.messaging"
     };
 
     private static final Map<String, Object> propsToChangePixelXL;
@@ -62,6 +61,8 @@ public class PixelPropsUtils {
 
     private static final String[] packagesToKeep = {
         PACKAGE_GMS,
+        "com.google.android.googlequicksearchbox",
+        "com.google.android.gms.persistent",
         "com.google.android.GoogleCamera",
         "com.google.android.GoogleCamera.Cameight",
         "com.google.android.GoogleCamera.Go",
@@ -75,7 +76,8 @@ public class PixelPropsUtils {
         "com.google.android.apps.cameralite",
         "com.google.ar.core",
         "com.google.android.apps.wearables.maestro.companion",
-        "com.google.android.apps.recorder"
+        "com.google.android.apps.recorder",
+        "com.google.android.deskclock"
     };
 
     // Codenames for currently supported Pixels by Google
