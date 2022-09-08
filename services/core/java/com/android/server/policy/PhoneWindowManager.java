@@ -2541,7 +2541,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     mContext.getResources().getInteger(
                             com.android.internal.R.integer.config_keyChordPowerVolumeUp));
             mVolBtnMusicControls = Settings.System.getIntForUser(resolver,
-                    Settings.System.VOLBTN_MUSIC_CONTROLS, 0,
+                    Settings.System.VOLBTN_MUSIC_CONTROLS, 1,
                     UserHandle.USER_CURRENT) == 1;
         }
         if (updateRotation) {
